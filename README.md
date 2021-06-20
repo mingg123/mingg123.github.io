@@ -12,7 +12,5 @@ HTML
 ```
 
 # Ref
+[github.com/RyanFitzgerald/devportfolio](https://github.com/RyanFitzgerald/devportfolio#license)
 
-```
-https://github.com/RyanFitzgerald/devportfolio#license
-```
