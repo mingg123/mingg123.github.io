@@ -4,7 +4,7 @@
 # Demo
 
 ```
-https://mingg123.github.io/
+[click!](https://mingg123.github.io/)
 ```
 
 # Env
