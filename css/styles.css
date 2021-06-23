@@ -493,25 +493,52 @@ footer {
   display: none;
 }
 #hyperdataprojectdialog {
-  width: 1100px;
-  height: 1000px;
+  width: 1200px;
+  height: 750px;
 }
-#hdprojectimagecontainer{
+#hdprojectimagecontainer {
   margin-bottom: 20px;
   border: 1px solid #dcd9d9;
 }
 .sqlflowimage {
-  width: 600px;
+  width: 750px;
   height: 250px;
 }
-.hdprojectdetailcontainer{
+#flowmainimage {
+  width: 400px;
+  height: 300px;
+}
+.floweditimage {
+  width: 365px;
+  margin-right: 20px;
+  height: 300px;
+}
+.edhvector {
+  width: 200px;
+  margin-right: 20px;
+  height: 300px;
+}
+.segmentresult {
+  width: 300px;
+  margin-right: 20px;
+  height: 300px;
+}
+.jobmonitoringimage {
+  width: 365px;
+  height: 300px;
+}
+.hdprojectleftbottem {
   display: flex;
   flex-direction: row;
 }
-.hdprojectdetailleft{
+.hdprojectdetailcontainer {
+  display: flex;
+  flex-direction: row;
+}
+.hdprojectdetailleft {
   margin-right: 20px;
 }
-.hdprojectskill{
+.hdprojectskill {
   max-width: 600px;
   padding: 10px;
   border: 1px solid #dcd9d9;
@@ -521,22 +548,25 @@ footer {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.hdprojectuser{
+.hdprojectuser {
   max-width: 600px;
   padding: 10px;
   border: 1px solid #dcd9d9;
   text-align: left;
   margin-bottom: 20px;
 }
-.hdprojectworkdetail{
+.hdprojectworkdetail {
   max-width: 600px;
   padding: 10px;
   border: 1px solid #dcd9d9;
   text-align: left;
   margin-bottom: 20px;
 }
-.hdprojectclose{
-  margin-left: 930px;
+.hdprojectclose {
+  float: right;
+  border: 1px solid skyblue;
+  background-color: rgba(0, 0, 0, 0);
+  color: skyblue;
 }
 /* ------------------------------- ----- 9. Skills Styles ----- ------------------------------- */
 #skills {
