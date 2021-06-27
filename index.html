@@ -55,7 +55,7 @@
             <div id="lead-content">
                 <h1>Min Ji Kim</h1>
                 <h2>Software Engineer</h2>
-                <a href="#" class="btn-rounded-white">Download Resume</a>
+                <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
             </div>
             <!-- End #lead-content -->
 
@@ -178,10 +178,24 @@
                             <img id="flowmainimage" src="images/sqlflowmain.png"/>
                         </div>
                         <div class="project-info">
-                            <div style="margin-left: 150px">
+                            <div style="margin-left: 240px">
                                 <h3>Hyperdata</h3>
                                 <p>플로우 모듈 React 전환</p>
-                                <a href="#project4" id="hyperdatareactproject">
+                                <a href="#project2" id="hyperdatareactproject">
+                                    View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img id="flowmainimage" src="images/mbtimain.PNG"/>
+                        </div>
+                        <div class="project-info">
+                            <div style="margin-left: 210px">
+                                <h3>MBTI TEST</h3>
+                                <p>MBTI 기반 성격 유형검사 프로젝트</p>
+                                <a href="#project3" id="mbtiproject">
                                     View Project</a>
                             </div>
                         </div>
@@ -196,7 +210,7 @@
                             <div style="margin-left: 120px">
                                 <h3>영상처리와 딥러닝을 이용한 유방암 판별</h3>
                                 <p>이미지 전처리 자동화 및 딥러닝 구현</p>
-                                <a href="#project2" id="deeplearningproject">View Project</a>
+                                <a href="#project4" id="deeplearningproject">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +225,7 @@
                                 <p>
                                     초음파 센서를 이용한 장애물 인식
                                 </p>
-                                <a href="#project3" id="drivingproject">View Project</a>
+                                <a href="#project5" id="drivingproject">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -274,20 +288,21 @@
                 <h3>Hyperdata 플로우 React 전환</h3>
                 <div class="hdprojectdetailcontainer">
                     <div class="hdprojectdetailleft">
+                       <div style="font-weight: bold;">전환 전</div>
                         <img
                             id="hdprojectimagecontainer"
                             class="sqlflowimage"
                             src="images/sqlflow.jpg"/>
+                       <div style="font-weight: bold;">전환 후</div>
                         <div class="hdprojectleftbottem">
-                            <div>
-                                <img class="floweditimage" src="images/flowedit.jpg"/>
-                            </div>
-                            <div>
-                                <img class="jobmonitoringimage" src="images/jobmonitoring.jpg"/>
-                            </div>
+                            <img
+                                id="hdprojectimagecontainer"
+                                class="sqlflowimage"
+                                src="images/flowreact.jpg"/>
+
                         </div>
                     </div>
-                    <div class="projectdetailright">
+                    <div style = "margin-top: 20px;" class="projectdetailright">
                         <div class="hdprojectuser">
                             <h4 class="hdprojectrelativeskill">세부 사항</h4>
                             <li>진행 기간/개발 인원 : 2021.01~2020.06 / 2명</li>
@@ -296,24 +311,69 @@
                         <div class="hdprojectworkdetail">
                             <h4 class="hdprojectrelativeskill">주요 업무/수행 내용</h4>
                             <li>기존 JavaScript로 이루어진 코드를 React로 전환</li>
-                            <li>프론트 단에서 쿼리를 만들도록 방식 수정</li>
-                            <li>다양한 오픈소스를 많이 사용해보았음</li>
-                                             
+                            <li>프론트 단에서 쿼리를 만드는 방식으로 수정</li>
+                            <li>다양한 오픈소스 및 matarial ui를 많이 활용해보았음</li>
+
                         </div>
                         <div class="hdprojectskill">
                             <h3 class="hdprojectrelativeskill">관련 분야 기술</h3>
                             <li>react-flow-render, node-sql-parser, js-sql-parser</li>
-                            <li>matarial-ui</li>
+                            <li>yarn, npm</li>
                         </div>
                     </div>
                 </div>
 
                 <menu>
                     <button class="hdprojectclose" value="cancel">Close</button>
-                    <!-- <button id="confirmBtn" value="default">확인</button> -->
                 </menu>
             </form>
         </dialog>
+
+
+        <dialog id="mbtiprojectdialog" class="hyperdataprojectdialog">
+            <form method="dialog">
+                <h3>MBTI 성격 유형 검사</h3>
+                <div class="hdprojectdetailcontainer">
+                    <div class="hdprojectdetailleft">
+                        <img style="border : 1px solid #dcd9d9"
+                            id="hdprojectimagecontainer"
+                            class="sqlflowimage"
+                            src="images/mbti1.PNG"/>
+                        <div class="hdprojectleftbottem">
+                            <div>
+                                <img style="border : 1px solid #dcd9d9" class="floweditimage" src="images/mbti2.jpg"/>
+                            </div>
+                            <div>
+                                <img style="border : 1px solid #dcd9d9" class="jobmonitoringimage" src="images/mbti3.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectdetailright">
+                        <div class="hdprojectuser">
+                            <h4 class="hdprojectrelativeskill">세부 사항</h4>
+                            <li>진행 기간/개발 인원 : 2020.06~2020.06 / 1명</li>
+                            <li>개발 언어/개발 환경 : HTML / Ubuntu</li>
+                        </div>
+                        <div class="hdprojectworkdetail">
+                            <h4 class="hdprojectrelativeskill">주요 업무/수행 내용</h4>
+                            <li>MBTI 기반 성격 유형 테스트</li>
+                            <li>검색 노출 및 사이트 배포 </li>
+                            <li>KaKao Adit을 이용한 광고 추가</li>
+                        </div>
+                        <div class="hdprojectskill">
+                            <h3 class="hdprojectrelativeskill">관련 분야 기술</h3>
+                            <li>HTML, CSS</li>
+                        </div>
+                    </div>
+                </div>
+
+                <menu>
+                    <button class="hdprojectclose" value="cancel">Close</button>
+                </menu>
+            </form>
+        </dialog>
+
+
 
         <dialog id="deeplearningprojectdialog" class="hyperdataprojectdialog">
             <form method="dialog">
@@ -364,7 +424,7 @@
 
                 <menu>
                     <button class="hdprojectclose" value="cancel">Close</button>
-                    <!-- <button id="confirmBtn" value="default">확인</button> -->
+                   
                 </menu>
             </form>
         </dialog>
@@ -534,7 +594,36 @@
             });
             HdDialog.addEventListener("close", function onClose() {});
 
-            //두번째 프로젝트
+    
+
+            
+            //다섯째 프로젝트
+            var reactButton = document.getElementById("hyperdatareactproject");
+            var reactDialog = document.getElementById("hyperdatareactprojectdialog");
+            reactButton.addEventListener("click", function onOpen() {
+                if (typeof reactDialog.showModal === "function") {
+                    reactDialog.showModal();
+                } else {
+                    alert("The <dialog> API is not supported by this browser");
+                }
+            });
+            reactDialog.addEventListener("close", function onClose() {});
+
+            
+
+            var mbtiButton = document.getElementById("mbtiproject");
+            var mbtiDialog = document.getElementById("mbtiprojectdialog");
+            mbtiButton.addEventListener("click", function onOpen() {
+                if (typeof mbtiDialog.showModal === "function") {
+                    mbtiDialog.showModal();
+                } else {
+                    alert("The <dialog> API is not supported by this browser");
+                }
+            });
+            mbtiDialog.addEventListener("close", function onClose() {});
+
+
+            
             var DeepButton = document.getElementById("deeplearningproject");
             var DeepDialog = document.getElementById("deeplearningprojectdialog");
             DeepButton.addEventListener("click", function onOpen() {
@@ -546,7 +635,8 @@
             });
             DeepDialog.addEventListener("close", function onClose() {});
 
-            //세번째 프로젝트
+
+        
             var drivingButton = document.getElementById("drivingproject");
             var drivingDialog = document.getElementById("drivingprojectdialog");
             drivingButton.addEventListener("click", function onOpen() {
@@ -558,17 +648,6 @@
             });
             drivingDialog.addEventListener("close", function onClose() {});
 
-            //네번째 프로젝트
-            var reactButton = document.getElementById("hyperdatareactproject");
-            var reactDialog = document.getElementById("hyperdatareactprojectdialog");
-            reactButton.addEventListener("click", function onOpen() {
-                if (typeof reactDialog.showModal === "function") {
-                    reactDialog.showModal();
-                } else {
-                    alert("The <dialog> API is not supported by this browser");
-                }
-            });
-            reactDialog.addEventListener("close", function onClose() {});
         </script>
     </body>
 </html>
