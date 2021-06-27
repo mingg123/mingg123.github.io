@@ -288,12 +288,12 @@
                 <h3>Hyperdata 플로우 React 전환</h3>
                 <div class="hdprojectdetailcontainer">
                     <div class="hdprojectdetailleft">
-                       <div style="font-weight: bold;">전환 전</div>
+                        <div style="font-weight: bold;">전환 전</div>
                         <img
                             id="hdprojectimagecontainer"
                             class="sqlflowimage"
                             src="images/sqlflow.jpg"/>
-                       <div style="font-weight: bold;">전환 후</div>
+                        <div style="font-weight: bold;">전환 후</div>
                         <div class="hdprojectleftbottem">
                             <img
                                 id="hdprojectimagecontainer"
@@ -302,7 +302,7 @@
 
                         </div>
                     </div>
-                    <div style = "margin-top: 20px;" class="projectdetailright">
+                    <div style="margin-top: 20px;" class="projectdetailright">
                         <div class="hdprojectuser">
                             <h4 class="hdprojectrelativeskill">세부 사항</h4>
                             <li>진행 기간/개발 인원 : 2021.01~2020.06 / 2명</li>
@@ -329,22 +329,28 @@
             </form>
         </dialog>
 
-
         <dialog id="mbtiprojectdialog" class="hyperdataprojectdialog">
             <form method="dialog">
                 <h3>MBTI 성격 유형 검사</h3>
                 <div class="hdprojectdetailcontainer">
                     <div class="hdprojectdetailleft">
-                        <img style="border : 1px solid #dcd9d9"
+                        <img
+                            style="border : 1px solid #dcd9d9"
                             id="hdprojectimagecontainer"
                             class="sqlflowimage"
                             src="images/mbti1.PNG"/>
                         <div class="hdprojectleftbottem">
                             <div>
-                                <img style="border : 1px solid #dcd9d9" class="floweditimage" src="images/mbti2.jpg"/>
+                                <img
+                                    style="border : 1px solid #dcd9d9"
+                                    class="floweditimage"
+                                    src="images/mbti2.jpg"/>
                             </div>
                             <div>
-                                <img style="border : 1px solid #dcd9d9" class="jobmonitoringimage" src="images/mbti3.jpg"/>
+                                <img
+                                    style="border : 1px solid #dcd9d9"
+                                    class="jobmonitoringimage"
+                                    src="images/mbti3.jpg"/>
                             </div>
                         </div>
                     </div>
@@ -357,7 +363,8 @@
                         <div class="hdprojectworkdetail">
                             <h4 class="hdprojectrelativeskill">주요 업무/수행 내용</h4>
                             <li>MBTI 기반 성격 유형 테스트</li>
-                            <li>검색 노출 및 사이트 배포 </li>
+                            <li>검색 노출 및 사이트 배포
+                            </li>
                             <li>KaKao Adit을 이용한 광고 추가</li>
                         </div>
                         <div class="hdprojectskill">
@@ -372,8 +379,6 @@
                 </menu>
             </form>
         </dialog>
-
-
 
         <dialog id="deeplearningprojectdialog" class="hyperdataprojectdialog">
             <form method="dialog">
@@ -424,7 +429,7 @@
 
                 <menu>
                     <button class="hdprojectclose" value="cancel">Close</button>
-                   
+
                 </menu>
             </form>
         </dialog>
@@ -509,9 +514,10 @@
             <h2>Get in Touch</h2>
             <div id="contact-form">
                 <form
+                    class="gform"
                     method="POST"
                     data-email="spgb123spgb@gmail.com"
-                    action="https://script.google.com/macros/s/AKfycbwdloJ1G50GHxQQ8vJvhY6ysYbY_X4tumX66sXAcAJck-uBXixHhLDELy3_td3YqOFxww/exec">
+                    action="https://script.google.com/macros/s/AKfycbxn1KQYmCFbA3brg0azzFpRnF-OufAZs1wl_SwgTJS-bc81YNryYJoWWCS8f1E-LBvZ/exec">
                     <input
                         type="hidden"
                         name="_subject"
@@ -522,7 +528,7 @@
                         placeholder="Your email"
                         required="required"/>
                     <textarea name="message" placeholder="Your message" required="required"></textarea>
-                    <button type="submit">Send</button>
+                    <button onClick="javascript:btn()" type="submit">Send</button>
                 </form>
             </div>
             <!-- End #contact-form -->
@@ -579,6 +585,15 @@
             </div>
         </footer>
         <!-- End footer -->
+        <script>
+            function btn() {
+                alert("감사합니다. 빠른 시일 내에 확인하도록 하겠습니다.")
+            }
+        </script>
+        <script
+            data-cfasync="false"
+            type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/scripts.min.js"></script>
@@ -594,9 +609,6 @@
             });
             HdDialog.addEventListener("close", function onClose() {});
 
-    
-
-            
             //다섯째 프로젝트
             var reactButton = document.getElementById("hyperdatareactproject");
             var reactDialog = document.getElementById("hyperdatareactprojectdialog");
@@ -609,8 +621,6 @@
             });
             reactDialog.addEventListener("close", function onClose() {});
 
-            
-
             var mbtiButton = document.getElementById("mbtiproject");
             var mbtiDialog = document.getElementById("mbtiprojectdialog");
             mbtiButton.addEventListener("click", function onOpen() {
@@ -622,8 +632,6 @@
             });
             mbtiDialog.addEventListener("close", function onClose() {});
 
-
-            
             var DeepButton = document.getElementById("deeplearningproject");
             var DeepDialog = document.getElementById("deeplearningprojectdialog");
             DeepButton.addEventListener("click", function onOpen() {
@@ -635,8 +643,6 @@
             });
             DeepDialog.addEventListener("close", function onClose() {});
 
-
-        
             var drivingButton = document.getElementById("drivingproject");
             var drivingDialog = document.getElementById("drivingprojectdialog");
             drivingButton.addEventListener("click", function onOpen() {
@@ -647,7 +653,6 @@
                 }
             });
             drivingDialog.addEventListener("close", function onClose() {});
-
         </script>
     </body>
 </html>
