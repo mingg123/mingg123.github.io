@@ -191,20 +191,7 @@
 
           <div class="project shadow-large">
             <div class="project-image">
-              <img id="flowmainimage" src="images/mbtimain2.PNG" />
-            </div>
-            <div class="project-info">
-              <div style="margin-left: 210px">
-                <h3>MBTI TEST</h3>
-                <p>MBTI 기반 성격 유형검사 프로젝트</p>
-                <a href="#project3" id="mbtiproject"> View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img id="flowmainimage" src="images/depplearningmain.png" />
+              <img id="flowmainimage" src="images/webmain.png" />
             </div>
 
             <div class="project-info">
@@ -212,6 +199,19 @@
                 <h3>반응형 웹</h3>
                 <p>반응형 웹 프로젝트</p>
                 <a href="#project4" id="reactivewebgproject">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project shadow-large">
+            <div class="project-image">
+              <img id="flowmainimage" src="images/mbtimain2.PNG" />
+            </div>
+            <div class="project-info">
+              <div style="margin-left: 210px">
+                <h3>MBTI TEST</h3>
+                <p>MBTI 기반 성격 유형검사 프로젝트</p>
+                <a href="#project3" id="mbtiproject"> View Project</a>
               </div>
             </div>
           </div>
@@ -402,27 +402,34 @@
 
     <dialog id="reactiveprojectdialog" class="hyperdataprojectdialog">
       <form method="dialog">
-        <h3>반응형 웹 프로젝트</h3>
+        <div style="display: flex; flex-direction: row">
+          <h3 style="padding-right: 1%">반응형 웹 프로젝트</h3>
+          <a class="webStyledHref" href="https://react-project-7d8cb.web.app"
+            >Demo Click!</a
+          >
+        </div>
         <div class="hdprojectdetailcontainer">
           <div class="hdprojectdetailleft">
-            <img
-              id="hdprojectimagecontainer"
-              class="sqlflowimage"
-              src="images/preprocessing.jpg"
-            />
-            <div class="hdprojectleftbottem">
-              <div>
-                <img class="edhvector" src="images/edhvector.png" />
+            <div class="webProjectWrapper">
+              <div class="webTopImageZone">
+                <img class="webImageContainer" src="/images/mobilemain2.png" />
+                <img class="webImageContainer" src="/images/mobilemain1.png" />
+                <img class="webImageContainer" src="/images/mobilemain3.png" />
               </div>
-              <div>
-                <img class="edhvector" src="images/overlay.png" />
-              </div>
-              <div>
-                <img class="segmentresult" src="images/segmentresult.png" />
+              <div class="webBottomImageZone">
+                <img
+                  style="width: 530px"
+                  class="webImageBottomContainer"
+                  src="/images/webmain2.png"
+                />
+                <img
+                  class="webImageBottomContainer"
+                  src="/images/webmain4.png"
+                />
               </div>
             </div>
           </div>
-          <div class="projectdetailright">
+          <div style="margin-left: 1%" class="projectdetailright">
             <div class="hdprojectuser">
               <h4 class="hdprojectrelativeskill">세부 사항</h4>
               <li>진행 기간/개발 인원 : 2021.10~2021.11 / 2명</li>
@@ -636,6 +643,14 @@
                   <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/%EB%AF%BC%EC%A7%80-%EA%B9%80-60123b1b6/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
               <!-- <li>
                                 <a href="https://stackoverflow.com/" target="_blank">
                                     <i class="fa fa-stack-overflow" aria-hidden="true"></i>
@@ -724,7 +739,7 @@
           alert("The <dialog> API is not supported by this browser");
         }
       });
-      DeepDialog.addEventListener("close", function onClose() {});
+      WebDialog.addEventListener("close", function onClose() {});
 
       var DeepButton = document.getElementById("deeplearningproject");
       var DeepDialog = document.getElementById("deeplearningprojectdialog");

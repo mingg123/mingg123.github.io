@@ -494,7 +494,7 @@ footer {
 }
 #hyperdataprojectdialog {
   width: 1200px;
-  height: 750px;
+  height: 850px;
 }
 #hdprojectimagecontainer {
   margin-bottom: 20px;
@@ -511,6 +511,36 @@ footer {
 .floweditimage {
   width: 365px;
   margin-right: 20px;
+  height: 300px;
+}
+.webProjectWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.webStyledHref {
+  padding-top: 1%;
+  font-size: large;
+  font-weight: 700;
+}
+.webTopImageZone {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  padding-bottom: 1%;
+}
+.webBottomImageZone {
+  display: flex;
+  flex-direction: row;
+}
+.webImageContainer {
+  border: 1px solid #dcd9d9;
+  margin-right: 1%;
+  width: 60%;
+  height: 500px;
+}
+.webImageBottomContainer {
+  border: 1px solid #dcd9d9;
+  margin-right: 1%;
   height: 300px;
 }
 .edhvector {
@@ -534,6 +564,31 @@ footer {
 .hdprojectdetailcontainer {
   display: flex;
   flex-direction: row;
+}
+.webprojectWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.webImageBottomZone {
+  display: flex;
+  flex-direction: row;
+}
+.webImageTopZone {
+  display: flex;
+  flex-direction: row;
+  height: 75%;
+}
+.imageWrapper {
+  border: 1px solid #dcd9d9;
+  margin-right: 1%;
+  width: 30%;
+  height: 50%;
+}
+.imageWrapper2 {
+  border: 1px solid #dcd9d9;
+  margin-right: 1%;
+  width: 30%;
+  height: 50%;
 }
 .hdprojectdetailleft {
   margin-right: 20px;
